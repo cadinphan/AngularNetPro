@@ -1,0 +1,14 @@
+<h1>
+  Hero Detail Info
+</h1>
+<div *ngIf="hero">
+  <fieldset>
+    <legend style="color: red; font-style: bold">Detail</legend>
+    <h2>{{ hero.nameHero | uppercase }}</h2>
+    <div><label>Id: </label>{{hero.idHero}}</div>
+    <div>
+      <label>Name:</label>
+        <input [(ngModel)]="hero.nameHero" placeholder="Enter name of hero"/>
+    </div>
+  </fieldset>
+</div>
